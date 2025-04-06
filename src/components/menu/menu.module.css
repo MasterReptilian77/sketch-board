@@ -1,0 +1,32 @@
+
+
+.menuContainer{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    left: calc(1/2 * 100%);
+    top: 10%;
+    border: 1px solid var(--color-border1);
+    transform: translateX(-50%);
+    box-shadow: var(--color-shadow1);
+    background-color: var(--color-background1);
+    padding: 10px 15px;
+    border-radius: 6px;
+    overflow-x:auto;
+}
+
+.iconWrapper{
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.iconWrapper:hover, .iconWrapper.active{
+    background-color: var(--color-text2);
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,47 @@
+
+.toolboxContainer{
+    position: absolute;
+    padding: 1.25rem;
+    top: 25%;
+    left: 1.25rem;
+    width: 16rem;
+    border-radius: .375rem;
+    box-shadow: var(--color-shadow1);
+    border: 1px solid var(--color-border1);
+    background-color: var(--color-background1);
+}
+
+.toolboxContainer .toolboxItem{
+    margin-bottom: 1.25rem;
+}
+
+.toolboxContainer .toolboxItem .toolboxText{
+    margin: 0;
+    font-size: 11px;
+    color: var(--color-text1);
+}
+
+.toolboxContainer .toolboxItem .itemContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.toolboxContainer .toolboxItem .itemContainer .colorBox{
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1.5px solid var(--color-border2);
+}
+
+.toolboxContainer .toolboxItem .itemContainer .colorBox:hover, 
+.toolboxContainer .toolboxItem .itemContainer .colorBox.active{
+    border: 1px solid var(--color-border2);
+    box-shadow: var(--color-shadow2);
+}
+
+.toolboxContainer .toolboxItem .itemContainer input{
+    width: 100%;
+}
