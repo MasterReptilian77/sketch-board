@@ -3,7 +3,7 @@
 import { MENU_ITEMS } from "@/constants";
 import { useEffect, useLayoutEffect, useRef } from "react"
 import { useDispatch, useSelector } from "react-redux";
-import { menuItemClick, actionItemClick } from '@/redux/features/menu-slice';
+import { actionItemClick } from '@/redux/features/menu-slice';
 
 function Board() {
 
@@ -86,7 +86,7 @@ function Board() {
             drawLine(e.clientX, e.clientY);
 
         }
-        const handleMouseUp = (e: React.MouseEvent) => {
+        const handleMouseUp = () => {
             shouldDraw.current = false;
 
 
